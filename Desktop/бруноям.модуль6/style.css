@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    box-sizing: border-box;
+}
+
+body {
+    color:black;
+}
+
+header {
+    background-color: #6495ED;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 88px;
+}
+
+h2 {
+    font-size: 72px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 32px;  
+}
+
+section {
+  padding: 120px 0;
+}
+
+.accent-text {
+  color: #05264b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-important {
+    font-size: 32px;
+}
+
+.item-card {
+    border: 1px solid #d9d9d9;
+    padding: 32px;
+    margin: 32px;
+    max-width: 100%;
+}
+
+.text-name {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.text-allabout {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+.all-content {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.side-bar {
+  width: 200px;
+}
+
+.flex-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 25px;                        
+}
+
+.courses-main {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between; 
+    gap: 50px;                 
+    flex-wrap: wrap;            
+}
+
+.course-image img {
+     width: 500px; 
+     height: 500px; 
+     border-radius: 12px; 
+}
+
+.courses-text {
+    flex: 1;
+    min-width: 300px;
+}
+
