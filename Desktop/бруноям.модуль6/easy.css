@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 200vh; 
+}
+
+.header {
+	height: 80px;
+	width: 100%;
+	background-color: black;
+	position:fixed;
+}
+
+.round-btn {
+	height: 50px;
+	width: 50px;
+	background-color: green;
+	border-radius: 50%;
+	position:fixed;
+	z-index: 1000;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+}

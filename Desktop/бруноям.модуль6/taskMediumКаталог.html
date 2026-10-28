@@ -1,66 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnPace: каталог</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
-        <nav>
-            <a href="taskMediumMain.html" alt="главная страница" class="accent-text">Главная страница</a>
-            <a href="taskMediumШаблон.html" alt="шаблон курса" class="accent-text">Шаблон курса</a>
-            <a href="taskMediumКаталог.html" alt="все курсы" class="accent-text">Все курсы</a>
-            <a href="hard.html" alt="контакты" class="accent-text">Контакты</a>
-        </nav>
-    </header>
 
-    <main class="flex-wrap">
-        <section class="item-card" >
-            <div>
-                <h2 class="accent-text text-name">
-                    <a href="taskMediumШаблон.html" alt="Курс Веб-разработчик" class="accent-text"> Курс Веб-разработчик с нуля</a>
-                </h2>
-            
-            <a href="taskMediumШаблон.html" alt="Курс Веб-разработчик" class="accent-text"> <p class="text-allabout">Практический курс по веб-разработке: от HTML и CSS до JavaScript, Node.js, React.
-                Вы получите необходимые навыки и знания для работы в веб-програмировании
-            </p></a>
+    <main class="container">
+        <section id="main-courses">
+            <div class="main-name">
+                <h1>Обучаем востребованным профессиям</h1>
             </div>
-            
-        </section>
-        <section class="item-card">
-            <div>
-                <h2 class="accent-text text-name">
-                    <a href="taskMediumШаблон.html" alt="Курс Java-разработчик" class="accent-text"> Курс Java-разработчик с нуля</a>
-                </h2>
-                <a href="taskMediumШаблон.html" alt="Курс Java-разработчик" class="accent-text"><p class="text-allabout">Java - самый популярный язык программирования. На курсе вы познакомитесь с его основными возможностями и сможете начать работу с
-                позиции Junior Developer
-                </p></a>
+            <div class="name-of-sections">
+                <div class="sections-card active">
+                    <a href="taskMediumКаталог.html">Популярные</a>
+                </div>
+                <div class="sections-card">
+                    <a href="#">Программирование</a>
+                </div>
+                <div class="sections-card">
+                    <a href="#">Дизайн</a>
+                </div>
+                <div class="sections-card">
+                    <a href="#">Маркетинг</a>
+                </div>
+                <div class="sections-card">
+                    <a href="#">Офис</a>
+                </div>
             </div>
-            
         </section>
-        <section class="item-card">
-            <div>
-                <h2 class="accent-text text-name">
-                    <a href="taskMediumШаблон.html" alt="Курс Python-разработчик" class="accent-text">Курс Python-разработчик с нуля </a>
-                </h2>
+
+        <section class="flex-wrap">
+           
+            <article class="item-card cat-marketing">
+                <div class="card-bg-shapes"></div>
+                <div class="card-header-top">
+                    <span class="card-tag">Маркетинг</span>
+                    <span class="card-meta">32 ак.ч. <b>13 900 ₽</b></span>
+                </div>
+                <div class="card-content">
+                    <h2 class="text-name">
+                        <a href="taskMediumШаблон.html" class="accent-text">SMM: привлечение клиентов из соцсетей</a>
+                    </h2>
+                    <p class="text-allabout">Вы изучите ЦА, научитесь настраивать таргетированную рекламу, профессионально вести аккаунты и привлекать клиентов в Instagram, Vk и Facebook.</p>
+                </div>
+            </article>
+
+           
+            <article class="item-card cat-java">
+                <div class="card-bg-shapes"></div>
+                <div class="card-header-top">
+                    <span class="card-tag">Программирование</span>
+                    <span class="card-meta">32 ак.ч. <b>13 900 ₽</b></span>
+                </div>
+                <div class="card-content">
+                    <h2 class="text-name">
+                        <a href="taskMediumШаблон.html" class="accent-text">Веб разработчик с нуля</a>
+                    </h2>
+                    <p class="text-allabout">Вы изучите весь цикл создания сайта: от макета до вёрстки и выгрузки в сеть. Курс идеально подойдёт новичкам, которые не знают о профессии абсолютно ничего.</p>
+                </div>
+            </article>
+
             
-            <a href="taskMediumШаблон.html" alt="Курс Python-разработчик" class="accent-text"><p class="text-allabout">Python - один из самых простых и популярных в мире.
-                Идеальный вариант для начала работы в сфере
-            </p></a></div>
+            <article class="item-card cat-design">
+                <div class="card-bg-shapes"></div>
+                <div class="card-header-top">
+                    <span class="card-tag">Дизайн</span>
+                    <span class="card-meta">32 ак.ч. <b>13 900 ₽</b></span>
+                </div>
+                <div class="card-content">
+                    <h2 class="text-name">
+                        <a href="taskMediumШаблон.html" class="accent-text">Adobe Photoshop</a>
+                    </h2>
+                    <p class="text-allabout">Вы полностью погрузитесь в программу и научитесь пользоваться всеми основными инструментами. Этот практический курс подойдёт начинающим дизайнерам.</p>
+                </div>
+            </article>
+
             
+            <article class="item-card cat-office">
+                <div class="card-bg-shapes"></div>
+                <div class="card-header-top">
+                    <span class="card-tag">Офис</span>
+                    <span class="card-meta">32 ак.ч. <b>13 900 ₽</b></span>
+                </div>
+                <div class="card-content">
+                    <h2 class="text-name">
+                        <a href="taskMediumШаблон.html" class="accent-text">Углублённый курс Microsoft office</a>
+                    </h2>
+                    <p class="text-allabout">Вы научитесь работать с большим объёмом данных и составлять таблицы любой сложности. Курс отлично подойдёт менеджерам и аналитикам.</p>
+                </div>
+            </article>
+
+           
+            <article class="item-card cat-java">
+                <div class="card-bg-shapes"></div>
+                <div class="card-header-top">
+                    <span class="card-tag">Программирование</span>
+                    <span class="card-meta">32 ак.ч. <b>13 900 ₽</b></span>
+                </div>
+                <div class="card-content">
+                    <h2 class="text-name">
+                        <a href="taskMediumШаблон.html" class="accent-text">Веб разработчик с нуля</a>
+                    </h2>
+                    <p class="text-allabout">Вы изучите весь цикл создания сайта: от макета до вёрстки и выгрузки в сети. Курс идеально подойдёт новичкам, которые не знают о профессии абсолютно ничего.</p>
+                </div>
+            </article>
+
+           
+            <article class="item-card cat-marketing">
+                <div class="card-bg-shapes"></div>
+                <div class="card-header-top">
+                    <span class="card-tag">Маркетинг</span>
+                    <span class="card-meta">32 ак.ч. <b>13 900 ₽</b></span>
+                </div>
+                <div class="card-content">
+                    <h2 class="text-name">
+                        <a href="taskMediumШаблон.html" class="accent-text">SMM: привлечение клиентов из соцсетей</a>
+                    </h2>
+                    <p class="text-allabout">Вы изучите ЦА, научитесь настраивать таргетированную рекламу, профессионально вести аккаунты и привлекать клиентов в Instagram, Vk и Facebook.</p>
+                </div>
+            </article>
         </section>
-        <section class="item-card">
-            <div>
-                <h2 class="accent-text text-name">
-                    <a href="taskMediumШаблон.html" alt="Курс Инженер по тестированию" class="accent-text">Курс Инженер по тестированию с нуля</a>
-                </h2>
-            
-            <a href="taskMediumШаблон.html" alt="Курс Инженер по тестированию" class="accent-text"><p class="text-allabout">Полностью практический курс для тех, кто хочет начать работать тестировщиком ПО
-            </p></a></div>
-        </section >
     </main>
 </body>
 </html>

@@ -7,12 +7,6 @@
     box-sizing: border-box;
 }
 
-h1 {
-    display: block;
-    font-size: 2em;
-    font-weight: bold;
-}
-
 h2 {
     margin-bottom: 16px;
     line-height: 32px;
@@ -30,26 +24,51 @@ body {
     color:black;
 }
 
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: #333;
+    font-size: 15px;
+}
+
+.contacts {
+    display: flex;
+    gap: 15px;
+}
+
+.contacts a {
+    color: #333;
+}
+
 .map {
+    display: flex;
     width: 100%;              
     aspect-ratio: 16 / 9;     
     max-width: 600px; 
+    justify-content: center;
     align-items: center;       
 }
 
 .wrapper {
     display: flex;             
-    align-items: center;       
+    align-items: flex-start;       
     justify-content: space-between; 
     gap: 40px;                 
-    flex-wrap: wrap;           
+    max-width: 1400px;       
+    margin: 40px 0 40px 50px; 
+    padding: 0;          
 }
 
 .content-text-first {
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-    min-height: 300px;         
+    flex-direction: column;         
+    gap: 25px;
+    flex: 1;
+    min-width: 300px;         
 }
 
 a {
@@ -58,11 +77,42 @@ a {
 
 header {
     display: flex;
-    flex-direction: row;
-    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-.menu {
+
+header section:first-child {
     display: flex;
-    text-align: center;
-    margin-bottom: 30px;
+    align-items: center;
+    gap: 40px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.map {
+    flex: 1;
+    width: 100%;              
+    max-width: 600px; 
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contacts {
+    justify-content: center; 
+    align-items: end;
 }
